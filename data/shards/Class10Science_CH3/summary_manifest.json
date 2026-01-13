@@ -1,0 +1,24 @@
+{
+  "book_id": "Class10Science",
+  "chapter_id": "CH3",
+  "index_type": "summary",
+  "shard_version": "0.11.3",
+  "created_at": "2026-01-11T16:46:36.150040",
+  "params": {
+    "seed": 42,
+    "embedding_model": "all-MiniLM-L6-v2",
+    "faiss_factory": "IndexFlatL2",
+    "summary_generation": "llm",
+    "parent_child_enabled": false,
+    "image_binding_enabled": true
+  },
+  "checksums": {
+    "index": "eb9bf605e6e6acdf20637a953faed21ff587af7b7b16fa53f3f6bb820f59a887",
+    "chunks": "313a76ccfba31225a3d3254a8c221214821599fb341cb497dc1d07227b4d295a"
+  },
+  "stats": {
+    "num_chunks": 1,
+    "embedding_dim": 384,
+    "total_text_length": 1062
+  }
+}

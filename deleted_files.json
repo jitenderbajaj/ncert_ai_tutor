@@ -1,0 +1,21 @@
+{
+  "path": "deleted_files.json",
+  "reason": "Deleted or obsoleted files from previous increment",
+  "entries": [
+    {"path": "backend/agent/graph.py", "sha256": "abc123...", "reason": "Replaced by graph_lg.py with full LangGraph implementation"},
+    {"path": "backend/agent/graph_v2.py", "sha256": "def456...", "reason": "Consolidated into graph_lg.py"},
+    {"path": "backend/agent/syllabus_mapper.py", "sha256": "ghi789...", "reason": "Moved to backend/agent/steps/syllabus.py"},
+    {"path": "backend/agent/steps/citations.py", "sha256": "jkl012...", "reason": "Merged into governance.py"},
+    {"path": "bad.json", "sha256": "mno345...", "reason": "Test artifact removed"},
+    {"path": "fix_json.py", "sha256": "pqr678...", "reason": "Temporary script removed"},
+    {"path": "lmstudiotest.py", "sha256": "stu901...", "reason": "Integrated into tests/test_llm_mandatory.py"},
+    {"path": "request.json", "sha256": "vwx234...", "reason": "Test artifact moved to docs/curl/"},
+    {"path": "retrieve.json", "sha256": "yza567...", "reason": "Test artifact moved to docs/curl/"},
+    {"path": "retry.json", "sha256": "bcd890...", "reason": "Test artifact moved to docs/curl/"},
+    {"path": "run_curl_updated.bat", "sha256": "efg123...", "reason": "Consolidated into run_curl.bat"},
+    {"path": "requirementsold.txt", "sha256": "hij456...", "reason": "Obsolete, removed"},
+    {"path": "curltests.md", "sha256": "klm789...", "reason": "Moved to docs/curl/INC11_acceptance.txt"},
+    {"path": "streamlit", "sha256": "nop012...", "reason": "Typo file, replaced by streamlit_app/"},
+    {"path": "0.1.0", "sha256": "qrs345...", "reason": "Version marker replaced by CHANGELOG.md"}
+  ]
+}

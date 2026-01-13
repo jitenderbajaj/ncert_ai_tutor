@@ -1,0 +1,53 @@
+# FILE: config/app_config.yaml
+# Application configuration
+app:
+  name: "NCERT AI Tutor"
+  version: "0.11.0"
+  phase: "1"
+  increment: "11"
+
+server:
+  host: "0.0.0.0"
+  port: 8000
+  reload: true
+
+llm:
+  mode: "offline"  # offline, online, or hybrid
+  router_policy: "offline_first"  # offline_first, online_first, round_robin
+  router_fallback: true
+  router_timeout: 30
+
+providers:
+  offline:
+    - name: "lmstudio"
+      base_url: "http://localhost:1234/v1"
+      model: "llama-3.2-3b-instruct"
+    - name: "ollama"
+      base_url: "http://localhost:11434"
+      model: "llama3.2:3b"
+  
+  online:
+    - name: "openai"
+      model: "gpt-4o-mini"
+    - name: "openrouter"
+      model: "meta-llama/llama-3.1-8b-instruct"
+
+governance:
+  coverage_threshold: 0.6
+  redaction_enabled: true
+  retention_ttl_days: 90
+
+sla:
+  qa_target_ms: 3000
+  search_target_ms: 2000
+  degraded_mode: true
+
+cache:
+  enabled: true
+  ttl_hours: 24
+
+security:
+  api_key_required: false
+  rate_limit_enabled: true
+  rate_limit_rpm: 60
+  body_size_limit_mb: 50

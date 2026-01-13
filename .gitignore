@@ -1,0 +1,72 @@
+# FILE: .gitignore
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+.venv/
+venv/
+ENV/
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Testing
+.pytest_cache/
+.coverage
+htmlcov/
+.tox/
+.mypy_cache/
+.hypothesis/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Environment
+.env
+.env.local
+
+# Logs
+logs/*.log
+*.log
+
+# Data and artifacts (keep structure, ignore contents)
+data/shards/*.pkl
+data/shards/*.index
+data/shards/*.faiss
+data/summaries/*.jsonl
+data/images/**/*.png
+data/images/**/*.jpg
+data/memory/*.jsonl
+data/cache/*.json
+data/attempts/*.jsonl
+artifacts/generated/**/*
+!artifacts/.gitkeep
+!data/*/.gitkeep
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Temporary files
+*.tmp
+*.bak
+bad.json

@@ -1,0 +1,45 @@
+# FILE: config/router_config.yaml
+# Router configuration
+router:
+  policy: "offline_first"
+  fallback: true
+  timeout: 30
+  
+  priorities:
+    offline_first:
+      - lmstudio
+      - ollama
+      - openrouter
+      - openai
+      - huggingface
+      - grok
+      - gemini
+    
+    online_first:
+      - openai
+      - openrouter
+      - huggingface
+      - gemini
+      - grok
+      - lmstudio
+      - ollama
+
+circuit_breaker:
+  threshold: 3
+  timeout_seconds: 60
+{
+  "coverage_threshold": 0.6,
+  "safety_checks": [
+    "grounding",
+    "age_appropriate",
+    "curriculum_aligned"
+  ],
+  "refusal_triggers": [
+    "out_of_scope",
+    "unsafe",
+    "insufficient_coverage"
+  ],
+  "redaction_pii": true,
+  "retention_ttl_days": 90,
+  "audit_logging": true
+}

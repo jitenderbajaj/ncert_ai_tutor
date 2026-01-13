@@ -1,0 +1,13 @@
+{
+  "chapter_id": "CH1",
+  "book_id": "Class10Science",
+  "generated_by": "lmstudio/llama-3.2-3b-instruct",
+  "provider": "lmstudio",
+  "model": "llama-3.2-3b-instruct",
+  "seed": 42,
+  "timestamp": "2026-01-11T14:42:49.801194",
+  "input_chars": 10405,
+  "output_chars": 1254,
+  "compression_ratio": 0.121,
+  "generation_status": "success"
+}
